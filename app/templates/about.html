@@ -1,6 +1,102 @@
+
 {% extends "base.html" %}
 
 {% block main %}
-<h1>About</h1>
-<p>This webpage is about {{ name }}.</p>
+
+    <!--<link rel="stylesheet" href="/static/css/about.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" type="text/css" />
+    
+
+<div id="Picture">
+    <img src="{{ url_for('static', filename='WIN_20160904_07_48_35_Pro.jpg' ) }}"/>
+</div>
+<h1>Gawayne Lawton</h1>
+
+<div class ="Contact">
+    <strong>Email:</strong>
+    <a href="mailto:gawayne_lawton@yahoo.com" target ="_blank"> gawayne_lawton@yahoo.com </a>
+    <br>
+    <strong>Github Profile: </strong><a href="https://github.com/G-Wayne"> G-Wayne</a>
+    </div>
+    <br>
+    <br>
+<div class = "Career_Objective">
+<p> I am an aspiring computer scientist who hopes to garner professional knowledge and experience in ICT thereby being one of the best computer scientists in my country. In addition i would like to use my skills and experience to boost computer/ICT innovation specifically network security and database management for whomever client requests my expertise or whichever organization I am a part of. </p>
+</div>
+
+<div class = "Education">
+        <div id = "Education_Category">
+      <h3><em>Education</em></h3>
+      </div>
+      <strong>The University of the West Indies Mona (UWI)</strong>
+        <br>
+        <br>
+        <strong>Major</strong>: Computer Science
+         <br>
+        <strong>Minor</strong>: Management Studies
+</div>
+     </p>
+     <br>
+     <br>
+
+    <p>
+    <div class  = "Skills">
+      <div id = "Skills_Category">
+      <h3><em>Skills</em></h3>
+      </div>
+      <strong>Office skills</strong>
+        <br>
+        <br>
+     Office and records management, customer service
+        <br>
+        <br>
+     <strong>Computer skills</strong>
+        <br>
+        <br>
+     Programming,Web development,Microsoft productivity software(Word, Excel, etc), windows.
+
+    </div>
+    </p>
+      <br>
+      <br>
+
+    <p>
+    <div class ="Experience">
+      <div id ="Experience_Category">
+
+        <h3><em>Work Experience</em></h3>
+      </div>
+      <strong>Position held</strong>
+        <br>
+        <ul>
+          <li>Reasearch Assistant 2017</li>
+          <li>HR Assistant 2017</li>
+        </ul>
+    </div>
+    </p>
+    <br>
+    <br>
+
+    <p>
+    <div class = "Hobbies">
+      <div id = "Hobbies_Category">
+      <h3><em>Hobbies</em></h3>
+    </div>
+
+      <ul>
+        <li>Programming</li>
+        <li>Reading</li>
+        <li>Listening to Music</li>
+        <li>Playing Video games</li>
+        <li>Track and field</li>
+        <li>Farming</li>
+     </ul>
+    </div>
+  </p>
+  <br>
+  <br>
+  <p>This webpage is about {{ name }}.</p>
+  
 {% endblock %}
+
+
