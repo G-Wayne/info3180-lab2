@@ -18,12 +18,12 @@ def format_date_joined():
     """returns the date in the format Month, Year (for example Feb, 2018)"""
     return datetime.date.today().strftime("%b, %Y")
 
-@app.route('/')
+@app.route('/profile/')
 def profile():
     """Render website's fake profile information"""
     return render_template('profile.html', time = format_date_joined())
 
-@app.route('/home/')
+@app.route('/')
 def home():
     """Render website's home page."""
     return render_template('home.html')
